@@ -4,7 +4,7 @@ body{
 }
 .wrapper{
     /* border: 1px solid #000; */
-    height: 700px;
+    height: auto;
     width: 90%;
     margin: 0 auto;
 }
@@ -89,7 +89,6 @@ ul.list_sidebar li {
 }
 
 .maincontent{
-    border: 1px solid #ff0000;
     height: auto;
     width: 79%;
     margin-top: 5px;
@@ -104,10 +103,10 @@ ul.product_list{
 }
 ul.product_list li{
     width: 18%;
-    border: 1px dashed #000;
+    border: 1px solid #ddd;
     margin: 5px;
     float: left;
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
     height: 300px;
 }
 ul.product_list li img{
