@@ -17,7 +17,22 @@
             include("../pages/main/tintuc.php");
            }elseif($tam == 'lienhe'){
             include("../pages/main/lienhe.php");
-           }else {
+           }elseif($tam == 'sanpham'){
+            include("../pages/main/sanpham.php");
+           }elseif($tam == 'dangky'){
+            include("../pages/main/dangky.php");
+           }elseif($tam == 'thanhtoan'){
+            include("../pages/main/thanhtoan.php");
+           }elseif($tam == 'dangnhap'){
+            include("../pages/main/dangnhap.php");
+           }elseif($tam == 'timkiem'){
+            include("../pages/main/timkiem.php");
+           }elseif($tam == 'camon'){
+            include("../pages/main/camon.php");
+           }elseif($tam == 'doimatkhau'){
+            include("../pages/main/doimatkhau.php");
+           }
+           else {
             include("../pages/main/index.php");
            }
            ?>

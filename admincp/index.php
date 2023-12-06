@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,12 @@
     <link rel="stylesheet" href="../admincp/css/styleadmincp.css">
     <title>Admincp</title>
 </head>
+<!-- <?php
+session_start();
+if(!isset($_SESSION['dangnhap'])){
+    header("Location: login.php");
+}
+?> -->
 <body>
     <h3 class="title_admin" >Welcome to AdminCP</h3>
     <div class="wrapper" >

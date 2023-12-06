@@ -5,8 +5,37 @@ body{
 .wrapper{
     /* border: 1px solid #000; */
     height: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+i.fa.fa-plus.fa-style{
+    color: #000;
+    font-size: 10px;
+}
+i.fa.fa-plus.fa-style :hover{
+    color: brown;
+}
+.wrapper_chitiet{
+    height: auto;
     width: 90%;
     margin: 0 auto;
+}
+.hinhanh_sanpham{
+    float: left;
+    width: 25%;
+}
+.chitiet_sanpham{
+    float: left;
+    width: 45%;
+    margin: 0 10px;
+}
+input.themgiohang{
+    border: none;
+    background: brown;
+    color: #fff;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
 }
 .header{
     background-image: url("../images/banner.jpg") ;
@@ -28,11 +57,10 @@ ul.list_menu {
     padding: 0;
     margin: 0 ;
     list-style: none;
-    width: 60%;
-    /* background-color: 1px solid ; */
+    width: 80%;
     margin: 0 auto;
     border: 1px solid #000;
-    list-style: 27px;
+    line-height: 27px;
 }
 ul.list_menu li:hover{
     background: burlywood;
@@ -57,17 +85,18 @@ ul.list_menu li {
 }  
 .sidebar{
     /* border: 1px solid #000066; */
-    height: 390px;
+    height: 200px;
     width: 19%;
     margin-top:5px ;
     margin-left: 5px;
     float: left;
 }
 ul.list_sidebar {
+    margin-left: 70px;
     padding: 0;
-    margin: 0 ;
+    /* margin: 0 ; */
     list-style: none;
-    width: 100%;
+    width: 70%;
     border: 1px solid #000;
     list-style: 27px;
 }
@@ -130,7 +159,7 @@ p.price_product{
 }
 .footer{
     border: 1px solid #ff1a8c;
-    height: 100px;
+    height: 60px;
     width: 100%;
     background: #94ffc9;
 }
