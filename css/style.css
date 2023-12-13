@@ -38,19 +38,19 @@ input.themgiohang{
     cursor: pointer;
 }
 .header{
-    background-image: url("../images/banner.jpg") ;
+    background-image: url("../images/banner3.png") ;
     background-repeat: no-repeat;
-    background-size: 100% 180px;
+    background-size: 100% 150px;
     border: 1px solid #ff80ff;
-    height: 130px;
+    height: 150px;
     width: 100%;
     /* background: #ff0080; */
 }
 .menu{
-    border: 1px solid #1aff8c;
+    border: 1px solid #ffffff;
     height: 50px;
     width: 100%;
-    background: #00e6ac;
+    background: #8cd8fe;
     /* line-height: 50px; */
 }
 ul.list_menu {
@@ -79,7 +79,7 @@ ul.list_menu li {
     padding: 5px;
 }
  #main{
-    border: 1px solid #00ff80;
+    border: 1px solid #fafffd;
     height: auto;
     width: 100%;
 }  
@@ -161,7 +161,7 @@ p.price_product{
     border: 1px solid #ff1a8c;
     height: 60px;
     width: 100%;
-    background: #94ffc9;
+    background: #ffffff;
 }
 p.footer_copyright{
     text-align: center ;

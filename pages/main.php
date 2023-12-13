@@ -1,4 +1,4 @@
-<div id="main" >
+<div id="main" style="display: flex;" >
     <?php include("../pages/sidebar/sidebar.php") ?>
 
         <div class="maincontent" >
@@ -7,9 +7,7 @@
             $tam= $_GET['quanly'];
            }else{
             $tam='';
-           }
-           
-           if($tam == 'danhmucsanpham'){
+           }if($tam == 'danhmucsanpham'){
             include("../pages/main/danhmuc.php");
            }elseif($tam == 'giohang'){
             include("../pages/main/giohang.php");

@@ -8,9 +8,9 @@
     if($page== '' || $page ==1){
         $begin = 0;
     }else{
-        $begin= ($page*3)-3;
+        $begin= ($page*4)-4;
     }
-     $sql_pro="SELECT * FROM  tbl_sanpham, tbl_danhmuc WHERE tbl_sanpham.id_danhmuc= tbl_danhmuc.id_danhmuc ORDER BY tbl_sanpham.id_sanpham DESC LIMIT $begin,3";
+     $sql_pro="SELECT * FROM  tbl_sanpham, tbl_danhmuc WHERE tbl_sanpham.id_danhmuc= tbl_danhmuc.id_danhmuc ORDER BY tbl_sanpham.id_sanpham DESC LIMIT $begin,4";
      $query_pro= mysqli_query($mysqli, $sql_pro);
  
 ?>
@@ -55,7 +55,7 @@
         <?php
         $sql_trang = mysqli_query($mysqli,"SELECT * from tbl_sanpham ")  ;
         $row_count = mysqli_num_rows($sql_trang);
-        $trang= ceil( $row_count/3);
+        $trang= ceil( $row_count/4);
         ?>     
         <p>Trang hiện tại : <?php echo $page ?>/<?php echo $trang ?></p>
 

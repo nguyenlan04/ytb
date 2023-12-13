@@ -2,5 +2,5 @@
 
 </div>
 <div class="footer" >
-    <p class="footer_copyright" >Copyright by LAN</p>
+    <p class="footer_copyright" >LannThii@2023</p>
 </div>
