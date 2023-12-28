@@ -1,4 +1,4 @@
-<div id="main" style="display: flex;" >
+<div id="main" style="display: flex;margin-bottom: 80px;" >
     <?php include("../pages/sidebar/sidebar.php") ?>
 
         <div class="maincontent" >
@@ -11,6 +11,10 @@
             include("../pages/main/danhmuc.php");
            }elseif($tam == 'giohang'){
             include("../pages/main/giohang.php");
+           }elseif($tam == 'danhmucbaiviet'){
+            include("../pages/main/danhmucbaiviet.php");
+           }elseif($tam == 'baiviet'){
+            include("../pages/main/baiviet.php");
            }elseif($tam == 'tintuc'){
             include("../pages/main/tintuc.php");
            }elseif($tam == 'lienhe'){

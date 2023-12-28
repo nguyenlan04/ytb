@@ -24,7 +24,7 @@ if(isset($_POST['themsanpham'])){
     header('Location: ../../index.php?action=quanlysanpham&query=them');
 }elseif(isset($_POST['suasanpham'])){
     //sua
-    if($hinhanh!=''){
+    if(!empty($hinhanh= $_FILES['hinhanh']['name']    )){
     $sql_update="UPDATE tbl_sanpham SET tensp='".$tensp."', masp='".$masp."',giasp='".$giasp."',soluong='".$soluong."',hinhanh='".$hinhanh."',tomtat='".$tomtat."',noidung='".$noidung."',tinhtrang='".$tinhtrang."',id_danhmuc='".$danhmuc."' WHERE id_sanpham='$_GET[idsanpham]'  ";
     move_uploaded_file($hinhanh_tmp, 'uploads/'.$hinhanh);
     $sql="SELECT * FROM tbl_sanpham WHERE id_sanpham = '$_GET[idsanpham]' LIMIT 1";

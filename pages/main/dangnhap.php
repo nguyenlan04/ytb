@@ -8,6 +8,7 @@ if(isset($_POST['dangnhap'])){
     if($count>0){
         $row_data= mysqli_fetch_array($row);
         $_SESSION['dangky']= $row_data['tenkh'];
+        $_SESSION['email'] = $row_data['email'];         
         $_SESSION['id_kh']= $row_data['id_dangky'];
         // header("Location: index.php?quanly=giohang ");
         echo '<script>window.location.href = "index.php?quanly=giohang";</script>';
@@ -18,7 +19,7 @@ if(isset($_POST['dangnhap'])){
     }
 }
 ?>
-        <form action="" autocomplete="off" method="POST" >
+        <form action="" autocomplete="off" method="POST" style="padding-left:30% ;" >
         <table border="1" class="table-login" style="text-align: center; border-collapse: collapse; " >
         <tr>
             <td colspan="2" ><h3>Đăng nhập</h3></td>

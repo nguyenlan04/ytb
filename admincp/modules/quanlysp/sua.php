@@ -4,7 +4,7 @@ $query_sua_sp = mysqli_query($mysqli, $sql_sua_sp);
 ?>
 <p>Sửa sản phẩm</p>
 
-<table border="1" width="50%" style="border-collapse: collapse;" >
+<table border="1" width="100%" style="border-collapse: collapse;" >
 <?php
 while($row= mysqli_fetch_array($query_sua_sp)) {
 ?>  

@@ -7,11 +7,11 @@
   </tr>
   <tr>
     <td>Nội dung</td>
-    <td><textarea name="noidung"   rows="10" style="resize: none;" ></textarea></td>
+    <td><textarea name="noidung" id="noidung"   rows="10" style="resize: none;" ></textarea></td>
   </tr>
   <tr>
     <td>Tóm tắt</td>
-    <td><textarea name="tomtat" rows="10" style="resize: none;" ></textarea></td>
+    <td><textarea name="tomtat" id="tomtat" rows="10" style="resize: none;" ></textarea></td>
   </tr>
 
  

@@ -8,7 +8,8 @@ if(isset($_POST['dangky'])){
     $sql_dangky = mysqli_query($mysqli, "INSERT INTO tbl_dangky(tenkh, email, diachi, matkhau, sdt) VALUE ('".$tenkh."','".$email."','".$diachi."','".$matkhau."','".$sdt."') ");
     if($sql_dangky){
         echo '<p style="color:green" >Bạn đã đăng ký thành công</p>';
-        $_SESSION['dangky'] = $tenkh;        
+        $_SESSION['dangky'] = $tenkh;  
+        // $_SESSION['email'] = $email;         
         $_SESSION['id_kh'] = mysqli_insert_id($mysqli);
 
         // header('Location: index.php?quanly=giohang');
@@ -18,13 +19,13 @@ if(isset($_POST['dangky'])){
    
 }
 ?>
-<p>Đăng ký thành viên</p>
+<p style="padding-left:20% ;" >Đăng ký thành viên</p>
 <style type="text/css" >
     table.dangky tr td{
         padding: 5px;
     }
 </style>
-<form action="" method="POST" >
+<form action="" method="POST" style="padding-left:20% ;" >
 <table class="dangky" border="1" width="50%" style="border-collapse: collapse;" >
     <tr>
         <td>Họ và tên</td>

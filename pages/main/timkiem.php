@@ -9,7 +9,9 @@
      $query_pro= mysqli_query($mysqli, $sql_pro);
  
 ?>
-   <h3>Từ khóa tìm kiếm: <?php $_POST['tukhoa']; ?></h3>
+   <!-- <h3>Từ khóa tìm kiếm: <?php $_POST['tukhoa']; ?></h3> -->
+   <h3>Từ khóa tìm kiếm: <?php echo $tukhoa ?></h3>
+
         <ul class="product_list" >
             <?php
                 while($row= mysqli_fetch_array($query_pro)){
